@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import Footer from "../components/Layout/footer";
-
+import IsScrolled from "../components/isScrolled"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -29,11 +29,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-
+<IsScrolled>
         <div className="relative isolate mx-auto mb-32"> 
                {children}
+               
         </div>
-   
+        </IsScrolled>
         <Footer />
 
       </body>

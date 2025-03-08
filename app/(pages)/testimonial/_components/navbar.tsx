@@ -154,6 +154,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import clsx from "clsx";
+import { cn } from "@/lib/utils";
 
 const navLinks = [
     { name: "Home", href: "/" },
@@ -168,7 +169,7 @@ const Breadcrumb = ({ title, description }: { title: string; description?: strin
     return (
         <div
             className="relative w-full h-[400px] pt-[150px] bg-cover bg-center flex flex-col justify-center items-center text-white text-center px-4"
-            style={{ backgroundImage: "url('/breadhome.jpg')" }}
+            style={{ backgroundImage: "url('/breadprogram.jpg')" }}
         >
             <div className="bg-gray-900/60 text-center flex flex-col justify-center items-center p-6">
                 <h1 className="text-4xl font-bold">{title}</h1>
@@ -215,7 +216,7 @@ const Header = () => {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex gap-6 p-2 bg-white rounded-lg">
+                    <nav className="hidden md:flex gap-6 p-2 backdrop-blur-md rounded-lg">
                         {navLinks.map(({ name, href }) => (
                             <Link
                                 key={href}
@@ -224,7 +225,7 @@ const Header = () => {
                                     "relative text-lg font-medium transition-all duration-300",
                                     pathname === href
                                         ? "text-green-600 scale-105"
-                                        : "text-sky-700 hover:text-blue-500 hover:scale-105"
+                                        : "text-rose-600  hover:text-blue-500 hover:scale-105"
                                 )}
                             >
                                 {name}
@@ -241,7 +242,7 @@ const Header = () => {
 
                     {/* Mobile Menu Button */}
                     <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-white">
-                        {isOpen ? <X size={28} /> : <Menu size={28} />}
+                        {isOpen ? <X size={28} /> : <Menu size={28} className={cn("text-white", isScrolled? "text-black" : "text-white"  )} />}
                     </button>
                 </div>
             </header>

@@ -154,6 +154,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import clsx from "clsx";
+import { cn } from "@/lib/utils";
 
 const navLinks = [
     { name: "Home", href: "/" },
@@ -215,7 +216,7 @@ const Header = () => {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex gap-6 p-2 bg-white rounded-lg">
+                    <nav className="hidden md:flex gap-6 p-2 backdrop-blur-md rounded-lg">
                         {navLinks.map(({ name, href }) => (
                             <Link
                                 key={href}
@@ -224,7 +225,7 @@ const Header = () => {
                                     "relative text-lg font-medium transition-all duration-300",
                                     pathname === href
                                         ? "text-green-600 scale-105"
-                                        : "text-sky-700 hover:text-blue-500 hover:scale-105"
+                                        : "text-rose-600  hover:text-blue-500 hover:scale-105"
                                 )}
                             >
                                 {name}
@@ -241,7 +242,7 @@ const Header = () => {
 
                     {/* Mobile Menu Button */}
                     <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-white">
-                        {isOpen ? <X size={28} /> : <Menu size={28} />}
+                        {isOpen ? <X size={28} /> : <Menu size={28} className={cn("text-white", isScrolled? "text-black" : "text-white"  )} />}
                     </button>
                 </div>
             </header>

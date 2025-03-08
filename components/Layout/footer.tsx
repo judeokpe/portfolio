@@ -1,5 +1,9 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import {FaFacebook, FaLinkedin} from "react-icons/fa"
+import { BsTwitterX } from "react-icons/bs";
+import { FaInstagram } from "react-icons/fa6";
+import Link from "next/link";
 
 
 export default function Footer() {
@@ -19,10 +23,10 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-3">Important Links</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:text-blue-400">About Us</a></li>
-            <li><a href="#" className="hover:text-blue-400">Our Programs</a></li>
-            <li><a href="#" className="hover:text-blue-400">Testimonials</a></li>
-            <li><a href="#" className="hover:text-blue-400">Privacy Policy</a></li>
+            <li><Link href="#" className="hover:text-blue-400">About Us</Link></li>
+            <li><Link href="#" className="hover:text-blue-400">Our Programs</Link></li>
+            <li><Link href="#" className="hover:text-blue-400">Testimonials</Link></li>
+            <li><Link href="#" className="hover:text-blue-400">Privacy Policy</Link></li>
           </ul>
         </div>
 
@@ -30,10 +34,11 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-3">Follow Us</h3>
           <div className="flex space-x-4">
-            <a href="#" className="text-blue-400 hover:text-white"><i className="fab fa-facebook fa-lg"></i></a>
-            <a href="#" className="text-blue-400 hover:text-white"><i className="fab fa-twitter fa-lg"></i></a>
-            <a href="#" className="text-blue-400 hover:text-white"><i className="fab fa-instagram fa-lg"></i></a>
-            <a href="#" className="text-blue-400 hover:text-white"><i className="fab fa-linkedin fa-lg"></i></a>
+            <Link href="#" className="text-blue-400 hover:text-white"><FaFacebook /> </Link>
+            <Link href="#" className="text-blue-400 hover:text-white"><BsTwitterX /></Link>
+            <Link href="#" className="text-blue-400 hover:text-white"><FaInstagram /></Link>
+            <Link href="#" className="text-blue-400 hover:text-white"><FaLinkedin /></Link>
+         
           </div>
         </div>
 
@@ -41,9 +46,9 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-3">Newsletter</h3>
           <p>Subscribe to get our latest updates.</p>
-          <form className="mt-3 flex">
-            <input type="email" placeholder="Enter your email" className="w-full p-2 rounded-l-md text-gray-700" />
-            <Button type="submit" className="bg-blue-500 px-4 py-2 rounded-r-md hover:bg-blue-600">Subscribe</Button>
+          <form className="mt-3 flex align-center">
+            <input type="email" placeholder="Enter your email" className="w-full px-4 focus:outline-0 rounded-l-md text-gray-700" />
+            <Button type="submit" className="bg-blue-500 px-4 py-4 rounded-r-md hover:bg-blue-600">Subscribe</Button>
           </form>
         </div>
 
