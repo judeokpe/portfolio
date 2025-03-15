@@ -1,10 +1,12 @@
+import Header from '@/components/Layout/Navbar'
 import React from 'react'
-import Header from './_components/navbar'
+
 
 function page() {
   return (
     <div>
-        <Header />
+        {/* <Header /> */}
+        <Header></Header>
         About
     </div>
   )

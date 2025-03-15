@@ -30,7 +30,8 @@ const IsScrolled = ({ children }: { children: React.ReactNode }) => {
       {showScrolled && (
         <Button
           onClick={scrollToTop}
-          className="fixed bottom-10 right-10 bg-green-600 text-white p-3 hover:bg-white hover:text-green-500 rounded-full"
+          variant="scroll"
+          className="fixed bottom-16 z-[9999] right-10 bg-green-600 text-white p-3 hover:text-green-500 rounded-full"
         >
           <BsChevronUp className="w-6 h-8 text-white font-bold" />
         </Button>

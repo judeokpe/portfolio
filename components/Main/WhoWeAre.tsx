@@ -1,37 +1,4 @@
-// import React from "react";
 
-// function WhoWeAre() {
-//   return (
-//     <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 p-8 max-w-7xl mx-auto">
-//       {/* Left Section with Background Image */}
-//       <div
-//         className="relative flex items-center justify-center w-full md:w-1/3 h-48 md:h-auto bg-cover bg-center text-white font-bold text-4xl p-6 text-center"
-//         style={{ backgroundImage: "url('/breadprogram.jpg)" }}
-//       >
-//         <span className="text-green-600">WHO WE ARE</span>
-//       </div>
-
-//       {/* Vertical Blue Separator */}
-//       <div className="w-1 bg-blue-600 h-40 md:h-auto"></div>
-
-//       {/* Right Section with Description */}
-//       <div className="w-full md:w-2/3 text-gray-700 space-y-4 text-lg">
-//         <p>
-//           We are a team of dedicated professionals committed to delivering top-notch
-//           services in various domains. Our expertise spans across technology, education,
-//           consulting, and beyond.
-//         </p>
-//         <p>
-//           Whether you're looking for innovative tech solutions, expert-led bootcamps,
-//           or professional guidance, we've got you covered. Join us on this journey
-//           to excellence.
-//         </p>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default WhoWeAre;
 
 
 import React from "react";
@@ -39,7 +6,7 @@ import { Button } from "../ui/button";
 
 function WhoWeAre() {
   return (
-    <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 p-8 max-w-7xl mx-auto bg-gray-200">
+    <div className="flex dark:shadow-sm dark:shadow-white dark:bg-gray-900 dark:text-white flex-col md:flex-row items-center md:items-start justify-center gap-8 p-8 max-w-7xl mx-auto bg-gray-200">
       {/* Left Section with Background Image and Title */}
       <div className="relative  bg-[url('/breadhome.jpg')] bg-cover bg-center w-full md:w-1/2 h-[350px]">
       <div
@@ -54,7 +21,7 @@ function WhoWeAre() {
       {/* <div className="w-6 bg-blue-600 h-40 md:h-auto"></div> */}
 
       {/* Right Section with Detailed Description */}
-      <div className="w-full md:w-2/3 text-gray-700 space-y-2 text-lg text-justify">
+      <div className="w-full md:w-2/3 text-gray-700 dark:text-white space-y-2 text-lg text-justify">
         <p>
           We are a team of passionate professionals driven by innovation, excellence, and a commitment to empowering individuals and businesses. Our expertise spans across technology, education, consulting, and digital solutions.
         </p>
