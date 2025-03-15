@@ -5,6 +5,12 @@
 html {
   scroll-behavior: smooth;
 }
+:root {
+  --font-outfit: "Outfit", sans-serif;
+  --font-geist-sans: "Geist", sans-serif;
+  --font-geist-mono: "Geist Mono", monospace;
+}
+
 
 
 /* @layer base {

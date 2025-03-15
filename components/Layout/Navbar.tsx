@@ -52,8 +52,9 @@ const Header = ({children}:HeaderProp) => {
             >
                 <div className="mx-auto max-w-7xl p-6 lg:px-8 flex items-center justify-between py-4">
                     {/* Logo */}
-                    <Link href="/">
+                    <Link href="/" className="flex items-center gap-2">
                         <Image src="/logo2.webp" alt="Logo" width={120} height={50} className="w-10 h-10" />
+                        <p className = "text-3xl font-bold uppercase">SmarTech</p>
                     </Link>
 
                     {/* Desktop Navigation */}

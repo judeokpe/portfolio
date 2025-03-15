@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white pt-10">
+    <footer className="bg-gray-900 dark:border-t text-white pt-10">
       <div className="mx-auto  max-w-7xl grid md:grid-cols-4 gap-8 px-6 pb-6">
         
         {/* Contact Section */}

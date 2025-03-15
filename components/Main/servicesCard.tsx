@@ -11,8 +11,8 @@ interface ServiceCardProp{
 
 function servicesCard({title, description, imgUrl}:ServiceCardProp) {
   return (
-    <div className="group relative shadow-sm shadow-gray-500 dark:shadow-gray-100">
-        <Image src={imgUrl} alt='mobile-dev'  width={600} height={600} className='w-[700px] h-[250px] object-cover shadow-sm shadow-gray-100' />
+    <div className="group  relative shadow-sm  shadow-gray-500 dark:shadow-gray-100">
+        <Image src={imgUrl} alt='mobile-dev'  width={600} height={600} className='rounded-2xl  w-[700px] h-[250px] object-cover shadow-sm shadow-gray-100' />
         <div className="hidden group-hover:block absolute  left-0 bg-gray-900 opacity-70 text-white inset-0 w-full h-full">
           <div className="flex items-center justify-center flex-col mt-[70px]">
           <p className="text-center">{title}</p>

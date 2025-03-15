@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Outfit } from "next/font/google";
+import { Geist, Geist_Mono, Outfit, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 import Footer from "../components/Layout/footer";
@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 const geistOutfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
@@ -34,12 +35,12 @@ export default function RootLayout({
     <html lang="en">
      
       <body
-        className={`${geistOutfit.variable} antialiased`}
+        className={`${playfair.variable} font-serif antialiased`}
       >
          <ThemeProvider>
 <IsScrolled>
 
-        <div className="relative isolate mx-auto mb-32 dark:bg-gray-900 bg-white dark:text-white"> 
+        <div className="relative isolate  dark:bg-gray-900 bg-white dark:text-white"> 
 {/*         
           <Header /> */}
                {children}
