@@ -54,7 +54,7 @@ const Header = ({children}:HeaderProp) => {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
                         <Image src="/logo2.webp" alt="Logo" width={120} height={50} className="w-10 h-10" />
-                        <p className = "text-3xl font-bold uppercase">SmarTech</p>
+                        <p className = "text-2xl font-bold uppercase">SmarTech</p>
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -100,8 +100,8 @@ const Header = ({children}:HeaderProp) => {
             {/* Mobile Menu with Smooth Animation */}
             <div
                 className={clsx(
-                    "fixed top-0 right-0 w-full h-auto bg-white shadow-lg transition-transform duration-300 ease-in-out transform p-6 z-[9999]",
-                    isOpen ? "-translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+                    "fixed top-0 right-0 w-5/6 h-auto bg-white shadow-lg transition-transform duration-300 ease-in-out transform p-6 z-[9999]",
+                    isOpen ? "-translate-x-0 opacity-100" : "-translate-x-full opacity-0"
                 )}
             >
                 {/* Close Button */}

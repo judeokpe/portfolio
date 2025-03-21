@@ -56,7 +56,7 @@ export default function Footer() {
 
       {/* Footer Bottom */}
       <div className="bg-gray-800 text-center py-3 mt-6">
-        <p>&copy; {new Date().getFullYear()} Bootcamp. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Ziffcode. All rights reserved.</p>
       </div>
     </footer>
   );

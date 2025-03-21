@@ -14,7 +14,7 @@ const HowitworksCard = ({ title, description }:CardProps) => {
     <div className="border rounded-2xl p-4 shadow-md w-full bg-white mt-4">
         
       <button
-        className="flex justify-between w-full text-left font-semibold text-lg"
+        className="flex justify-between w-full text-left font-semibold text-lg text-yellow-700"
         onClick={() => setIsOpen(!isOpen)}
       >
         {title}

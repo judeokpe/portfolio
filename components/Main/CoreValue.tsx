@@ -22,7 +22,7 @@ function CoreValue() {
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="space-y-8">
+        <div className="">
           <h3>Why Work With Us</h3>
           <div className="mb-8">
 

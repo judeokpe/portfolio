@@ -81,7 +81,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 transition-colors duration-300 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
+    <div className="flex flex-col items-center justify-center p-6 transition-colors duration-300 bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white">
       <div className="flex justify-between w-full max-w-4xl">
         <h2 className="text-3xl font-bold text-yellow-700">Hear From Our Clients & Students</h2>
       </div>

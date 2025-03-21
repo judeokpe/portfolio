@@ -49,7 +49,7 @@ import HowitworksCard from "./HowitworksCard";
 
 export const Howitworks = () => {
   return (
-    <div className="flex flex-col md:flex-row md:mb-[100px] bg-gray-100 dark:bg-gray-900 pb-[100px] items-center dark:border-b dark:text-yellow-500 pt-16 justify-between md:my-32 my-16 gap-8 px-4 md:px-8">
+    <div className="flex flex-col md:flex-row md:mb-[100px] bg-gray-50 dark:bg-gray-900 pb-[100px] items-center dark:border-b dark:text-yellow-500 pt-16 justify-between md:my-32 my-16 gap-8 px-4 md:px-8">
       <div className="w-full md:w-1/2">
         <h2 className="font-bold text-3xl text-green-500 mb-6">How the program works</h2>
 

@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-green text-primary-foreground shadow hover:bg-primary/90",
+          "bg-green-500 text-white shadow hover:bg-green-700/90",
         destructive:
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
@@ -18,7 +18,9 @@ const buttonVariants = cva(
         scroll:
           "bg-green dark:bg-yellow-400 shadow dark:hover:bg-yellow-700 hover:bg-green-600 text-primary-foreground",
         secondary:
-          "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
+          "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80 outline outline-yellow-700 hover:bg-yellow-700",
+        tertiary:
+          "bg-yellow-700 text-white shadow-sm hover:bg-yellow-700/80 ",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
       },

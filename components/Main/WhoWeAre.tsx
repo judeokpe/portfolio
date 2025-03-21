@@ -6,13 +6,13 @@ import { Button } from "../ui/button";
 
 function WhoWeAre() {
   return (
-    <div className="dark:shadow-sm dark:shadow-white mt-16 dark:bg-gray-900 dark:text-white bg-gray-200  ">
+    <div className="dark:shadow-sm dark:shadow-white mt-16 dark:bg-gray-900 dark:text-white md:bg-gray-50 pt-32 ">
       <p className="text-green-600 text-center font-bold text-3xl">WHO WE ARE</p>
 
       <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 p-4 md:p-8 max-w-7xl ">
         {/* Left Section with Background Image and Title */}
 
-        <div className="relative  bg-[url('/devteam.webp')] bg-cover bg-center w-full md:w-1/2 h-[350px]">
+        <div className="relative rounded-tl-[50px] rounded-br-[50px]  bg-[url('/devteam.webp')] bg-cover bg-center w-full md:w-1/2 h-[350px]">
           <div
             className="flex items-center justify-center mt-[150px] text-white font-bold text-4xl p-6 text-center "
 
@@ -38,7 +38,7 @@ function WhoWeAre() {
           <p>
             With a focus on scalability, performance, and user experience, we deliver high-quality solutions tailored to meet your needs. Join us and be part of a future driven by technology, learning, and growth.
           </p>
-          <Button className="bg-blue-500 text-white rounded-md flex items-center justify-center w-full">Apply</Button>
+          <Button variant="tertiary" className="rounded-md flex items-center justify-center w-full">Apply</Button>
         </div>
       </div>
     </div>
