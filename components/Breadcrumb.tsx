@@ -52,7 +52,7 @@ export const Breadcrumb = ({ title, description, imgUrl, link1, link2, linkurl1,
             <div className="bg-gray-900/60 text-center flex flex-col justify-center items-center p-6 rounded-lg">
                 <h1 className="text-4xl font-bold">{title}</h1>
                 {description && <p className="mt-2 text-lg max-w-2xl">{description}</p>}
-                <div className="mt-4 flex gap-4">
+                <div className="mt-4 flex flex-col md:flex-row gap-4">
                     {linkurl1 && (
                         <Link href={linkurl1} passHref>
                             <Button className="bg-green-600 text-white hover:bg-blue-700">

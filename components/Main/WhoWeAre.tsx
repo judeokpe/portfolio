@@ -6,8 +6,8 @@ import { Button } from "../ui/button";
 
 function WhoWeAre() {
   return (
-    <div className="dark:shadow-sm dark:shadow-white dark:bg-gray-900 dark:text-white bg-gray-200  ">
-      <p className="text-green-600 text-center">WHO WE ARE</p>
+    <div className="dark:shadow-sm dark:shadow-white mt-16 dark:bg-gray-900 dark:text-white bg-gray-200  ">
+      <p className="text-green-600 text-center font-bold text-3xl">WHO WE ARE</p>
 
       <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 p-4 md:p-8 max-w-7xl ">
         {/* Left Section with Background Image and Title */}
