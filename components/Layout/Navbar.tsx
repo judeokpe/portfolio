@@ -44,7 +44,7 @@ const Header = ({children}:HeaderProp) => {
         <>
             <header
                 className={cn(
-                    "sticky top-[0px] dark:bg-gray-100 dark:text-black bg-white left-0 w-full z-50 transition-all duration-300 back-drop-filter-[10px]",
+                    "sticky top-[0px] dark:bg-black dark:text-white  left-0 w-full z-50 transition-all duration-300 back-drop-filter-[10px]",
                     isScrolled ? "bg-white shadow-lg" : "bg-black",
                     isScrolled ? "text-blue-400" : "text-white"
                    
@@ -58,7 +58,7 @@ const Header = ({children}:HeaderProp) => {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex gap-6 p-2 px-4 border-[2px] border-yellow-500 rounded-full ">
+                    <nav className="hidden lg:flex gap-6 p-2 px-4 border-[2px] border-yellow-500 rounded-full ">
                         {navLinks.map(({ name, href }) => (
                             <Link
                                 key={href}
@@ -76,7 +76,7 @@ const Header = ({children}:HeaderProp) => {
                     </nav>
 
                     {/* Apply Button (Desktop) */}
-                    <div className="hidden md:flex items-center gap-2 ">
+                    <div className="hidden lg:flex items-center gap-2 ">
                         <Button className="bg-blue-600 dark:bg-yellow-700 text-white hover:bg-blue-700">
                             <Link href="/apply">Apply to Bootcamp</Link>
                         </Button>
@@ -86,8 +86,8 @@ const Header = ({children}:HeaderProp) => {
                     </div>
 
                     {/* Mobile Menu Button */}
-                    <button  onClick={() => setIsOpen(!isOpen)} className="md:hidden text-black text-2xl ">
-                        {isOpen ? <X size={28} /> : <Menu size={38} className={cn( isScrolled? "text-black" : "text-gray-200"  )} />}
+                    <button  onClick={() => setIsOpen(!isOpen)} className="lg:hidden text-black text-2xl ">
+                        {isOpen ? <X size={28} className="dark:text-black"/> : <Menu size={38} className={cn( isScrolled? "dark:text-white text-black" : "text-gray-500"  )} />}
                     </button>
                 </div>
             </header>
@@ -109,7 +109,7 @@ const Header = ({children}:HeaderProp) => {
                         <Image src="/logo2.webp" alt="Logo" width={120} height={50} className="w-10 h-10 absolute top-4 left-4" />
                     </Link>
                 <button onClick={() => setIsOpen(false)} className="absolute top-4 right-4">
-                    <X size={28} />
+                    <X size={28} className="text-black"/>
                 </button>
 
                 <nav className="mt-12 flex flex-col gap-6">
@@ -135,6 +135,11 @@ const Header = ({children}:HeaderProp) => {
                     <Button className="w-full bg-blue-600 text-white hover:bg-blue-700">
                         <Link href="/apply">Apply to Bootcamp</Link>
                     </Button>
+
+                    <div className="mt-4 w-full mx-auto flex items-center">
+                    <ThemeToggle />
+                    <p className="dark:text-gray-700">Dark/Light Mode</p>
+                    </div>
                 </div>
                
             </div>
