@@ -17,10 +17,13 @@ function Page() {
   return (
     <div>
     <Header>
-      <Breadcrumb title= "Empowering innovation with web, App $ Data Solution + Industry Leading Traning" description= "We develop high-performing digital solutions and eqip future tech professionals through hands on bootcamps and expert led courses" videoUrl='/coding.mp4' linkurl1='/' link1='Get Started' link2='Explore Our Course' linkurl2='/bootcamp' link3='Contact Us' linkurl3='/contact' />
+      <Breadcrumb title= "Home" description= "We develop high-performing digital solutions and eqip future tech professionals through hands on bootcamps and expert led courses" videoUrl='/coding.mp4' linkurl1='/' link1='Get Started' link2='Explore Our Course' linkurl2='/bootcamp' link3='Contact Us' linkurl3='/contact' />
     </Header>
+    {/* <Header>
+      <Breadcrumb title= "Empowering innovation with web, App $ Data Solution + Industry Leading Traning" description= "We develop high-performing digital solutions and eqip future tech professionals through hands on bootcamps and expert led courses" videoUrl='/coding.mp4' linkurl1='/' link1='Get Started' link2='Explore Our Course' linkurl2='/bootcamp' link3='Contact Us' linkurl3='/contact' />
+    </Header> */}
         
-      <main className="mt-[60px] p-2 mx-auto max-w-7xl px-6 lg:px-8">
+      <main className="mt-[20px] p-2 mx-auto max-w-7xl px-4 lg:px-8">
        <WhoWeAre />
  
        <OurServices />

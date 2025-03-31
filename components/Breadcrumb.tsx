@@ -129,11 +129,11 @@ export const Breadcrumb = ({
   }, []);
 
   return (
-    <div className="relative w-full md:h-[600px] h-[700px] pt-[100px] flex flex-col justify-center items-center text-white dark:text-yellow-200 text-center px-4">
+    <div className="relative w-full md:h-[400px] h-[400px] md:pt-[100px] pt-[200px] flex flex-col justify-center items-center text-white dark:text-yellow-200 text-center px-4">
       {/* Background Video or Image */}
       {videoUrl ? (
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full overflow-x-hidden h-[400px] object-cover"
           src={videoUrl}
           autoPlay
           loop
@@ -173,7 +173,7 @@ export const Breadcrumb = ({
       </motion.div>
 
       {/* Content Box */}
-      <div className="relative z-10 bg-gray-900/60 text-center flex flex-col justify-center items-center p-6 rounded-lg">
+      <div className="relative z-10 bg-gray-900/60 text-center -mt-64 flex flex-col justify-center items-center p-6 rounded-lg">
         <h1 className="text-4xl font-bold">{title}</h1>
         {description && <p className="mt-2 text-lg max-w-2xl">{description}</p>}
         <div className="mt-4 flex flex-col md:flex-row gap-4">
