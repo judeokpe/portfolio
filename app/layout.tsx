@@ -6,6 +6,7 @@ import Footer from "../components/Layout/footer";
 import IsScrolled from "../components/isScrolled"
 import Header from "@/components/Layout/Navbar";
 import { ThemeProvider } from "./context/theme-context/theme-provider";
+import ScrollAppear from "@/components/ScrollAppear";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -38,6 +39,7 @@ export default function RootLayout({
         className={`${playfair.variable} font-serif antialiased`}
       >
          <ThemeProvider>
+ 
 <IsScrolled>
 
         <div className="relative isolate  dark:bg-gray-900 bg-white dark:text-white"> 
@@ -47,7 +49,9 @@ export default function RootLayout({
                
         </div>
         </IsScrolled>
+        
         <Footer />
+      
         </ThemeProvider>
       </body>
     </html>

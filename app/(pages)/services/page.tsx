@@ -9,9 +9,12 @@ function page() {
   return (
     <div>
       <Header>
-        <Breadcrumb title="Empowering Businesses with Cutting-Edge Development & Data Solutions" description="We provide world-class web & mobile development, data analytics, AI solutions, and custom software to help you scale and innovate." imgUrl='services.png' linkurl1='/' link1='Get Quote' link2='Explore Our Work' linkurl2='/bootcamp' />
+        <Breadcrumb title="Services" description="We provide world-class web & mobile development, data analytics, AI solutions, and custom software to help you scale and innovate." imgUrl='services.png' linkurl1='/' link1='Get Quote' link2='Explore Our Work' linkurl2='/bootcamp' />
       </Header>
-      <div className=" text-center  our-services bg-slate-50  dark:bg-gray-900 dark:text-white py-8 md:py-32 space-y-2 p-2 mx-auto max-w-7xl px-6 lg:px-8">
+      {/* <Header>
+        <Breadcrumb title="Empowering Businesses with Cutting-Edge Development & Data Solutions" description="We provide world-class web & mobile development, data analytics, AI solutions, and custom software to help you scale and innovate." imgUrl='services.png' linkurl1='/' link1='Get Quote' link2='Explore Our Work' linkurl2='/bootcamp' />
+      </Header> */}
+      <div className=" text-center  our-services bg-slate-50  dark:bg-gray-900 dark:text-white py-8 md:py-22 space-y-2 p-2 mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className='text-2xl uppercase'> Overview of <span className='text-3xl text-yellow-500'>Services</span></h2>
         <p className='text-xl text-gray-500'>Comprehensive Digital Solutions for Your Business</p>
         <p className='text-xm text-gray-500'>We specialize in web & mobile app development, AI-driven data analysis, and custom software solutions tailored to your business needs. Explore our services below</p>

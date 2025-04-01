@@ -54,7 +54,7 @@ interface ServicesPageCardProps {
 function ServicesPageCard({ imageSrc, title, description, keyFeatures = [], urlLink }: ServicesPageCardProps) {
   return (
     <motion.div 
-      className="bg-white dark:bg-gray-900 shadow-lg rounded-2xl p-6 flex flex-col items-center gap-4 transform hover:scale-105 transition-all duration-300 hover:shadow-2xl mt-8 dark:shadow-yellow-200 dark:shadow-sm"
+      className="bg-white dark:bg-gray-900 shadow-lg rounded-2xl p-6 flex flex-col items-center gap-4 transform hover:scale-105 transition-all duration-300 hover:shadow-2xl md:mt-8 mt-20  dark:shadow-yellow-200 dark:shadow-sm"
       whileHover={{ scale: 1.05 }}
     >
       <div className="w-24 h-24 rounded-full overflow-hidden border border-gray-300">
